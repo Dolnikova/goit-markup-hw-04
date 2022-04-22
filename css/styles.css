@@ -146,10 +146,11 @@ li {
     width: 16px;
     height: 12px;
 }
-.contacts-header-icon:hover,
-.contacts-header-icon:focus {
-    fill: var(--second-color);
-}
+.menu-list:hover,
+.menu-list:focus {
+    color: var(--second-color); 
+    --text-color: var(--second-color);
+} 
 /* menu */
 .menu {
     color: var(--brand-color);
