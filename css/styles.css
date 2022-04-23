@@ -23,7 +23,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 *
 h1, h2, h3, h4, h5, h6, ul, p {
@@ -41,6 +41,7 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto; 
+
     /* border: 4px solid tomato; */
     
 
@@ -146,8 +147,8 @@ li {
     width: 16px;
     height: 12px;
 }
-.menu-list:hover,
-.menu-list:focus {
+.contacts:hover,
+.contacts:focus {
     color: var(--second-color); 
     --text-color: var(--second-color);
 } 
@@ -176,7 +177,11 @@ li {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images3/hero-after.jpg);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 .hero-name {
     font-weight: 900;
     font-size: 44px;
@@ -199,6 +204,8 @@ li {
     min-width: 200px;
     padding: 10px 32px;
     margin-top: 30px;
+    color:  var(--logo-footer-adress-hero);
+    border: transparent;
 }
 .section {
     padding-top: 94px;
@@ -302,7 +309,7 @@ li {
     margin-right: 30px;
 }
 .description-item::before {
-    content: "";
+    /* content: ""; */
     width: 270px;
     height: 120px;
     background-color: var(--description-color);
@@ -311,16 +318,27 @@ li {
     background-position: center;
     background-repeat: no-repeat;
 }
-.icon-antenna::before {
+.descrption-icon {
+    width: 270px;
+    height: 120px;
+    background-color: var(--description-color);
+    margin-bottom: 30px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-image: url(../images3/antenna.svg); */
+}
+
+.icon-antenna .descrption-icon {
     background-image: url(../images3/antenna.svg);
 }
-.icon-time::before {
+.icon-time .descrption-icon {
     background-image: url(../images3/clock.svg);
 }
-.icon-diagram::before {
+.icon-diagram .descrption-icon {
     background-image: url(../images3/diagram.svg);
 }
-.icon-astronaut::before {
+.icon-astronaut .descrption-icon {
     background-image: url(../images3/astronaut.svg);
 }
 .command-title {
@@ -339,16 +357,16 @@ li {
     color: var(--text-color);
     margin-bottom: 16px; 
 }
-.client-blok {
+/* .client-blok {
     margin-top: 0;
     padding-top: 94px;
     padding-bottom: 94px;
     text-align: center;
-
-}
+    content: center;
+    
+} */
 .client-blok-list {
     display: flex;
-    justify-content: center;
 
 }
 .client-blok-link {
@@ -367,10 +385,9 @@ li {
 .client-blok-icon {
     color: var(--client-command-color);
 }
-.client-blok-link:hover {
+.client-blok-link:hover,
+.client-blok-link:focus {
     border: 1px solid var( --second-color);
-}
-.client-blok-icon:hover {
     fill: var( --second-color);
 }
 .client-blok-link {
@@ -381,7 +398,6 @@ li {
     height: 92px;
     align-items: center; 
     box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 4px;
 }
 
@@ -391,11 +407,10 @@ li {
     line-height: 1.166;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
-    display: inline-block;
-    
+    text-align: center;
+    content: center;
 }
 .client-blok-icon {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     width: 106px;
     height: 60px;
     display: inline-block;
@@ -438,12 +453,12 @@ li {
     display: block;
 }
 .footer .container {
+    align-items: baseline;
     display: flex;
 }
 .join-blok {
     margin-top: 0;
-    padding-top: 10px;
-    padding-left: 70px;
+    margin-left: 70px;
     color: var(--logo-footer-adress-hero);
 }
 .join-title {
@@ -502,7 +517,8 @@ li {
     margin-right: 8px;
 
 }
-.post-filter-list:hover {
+.post-filter-list:hover,
+.post-filter-list:focus {
     box-sizing: border-box;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -539,18 +555,23 @@ li {
 
 }
 .filter-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
     color: var(--brand-color);
     background-color: var(--filter-button-color);
     border-radius: 4px;
     padding: 6px 22px;
     display: inline-block;
     text-align: center;
+    border: transparent;
 }
 .filter-button:hover,
 .filter-button:focus {
     background-color: var(--second-color);
     color: var(--logo-footer-adress-hero);
     cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .title-filter {
     font-size: 18px;

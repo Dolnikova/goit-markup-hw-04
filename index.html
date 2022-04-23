@@ -26,17 +26,18 @@
         </ul>
       </nav>
       <ul class="contacts-header">
-        <li class="menu-list">
-          <svg class="contacts-header-icon envelope">
+        <li class="menu-list">                   
+          <a class="contacts mail" href="mailto:info@devstudio.com">
+            <svg class="contacts-header-icon envelope">
             <use href="./images3/symbol-defs.svg#envelope"></use>
-          </svg>          
-          <a class="contacts mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </svg>info@devstudio.com</a>
         </li>
-        <li class="menu-list">
-          <svg class="contacts-header-icon smartphone">
+        <li class="menu-list">            
+          <a class="contacts telefon" href="tel:+380961111111">
+            <svg class="contacts-header-icon smartphone">
             <use href="./images3/symbol-defs.svg#smartphone"></use>
-          </svg>   
-          <a class="contacts telefon" href="tel:+380961111111">+38 096 111 11 11
+            </svg>
+            +38 096 111 11 11
           </a>
         </li>
       </ul>
@@ -55,13 +56,15 @@
         <div class="description-box"></div>
         <ul class="description-list">          
           <li class="description-item icon-antenna">
+            <div class="descrption-icon"></div>
             <h3 class="title">Внимание к деталям</h3>
             <p class="text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
-            </p>
+            </p>           
           </li>
           <li class="description-item icon-time">
+            <div class="descrption-icon"></div>
             <h3 class="title">Пунктуальность</h3>
             <p class="text">
               Задача организации, в особенности же рамки и место обучения кадров
@@ -69,6 +72,7 @@
             </p>
           </li>
           <li class="description-item icon-diagram">
+            <div class="descrption-icon"></div>
             <h3 class="title">Планирование</h3>
             <p class="text">
               Равным образом консультация с широким активом в значительной
@@ -76,6 +80,7 @@
             </p>
           </li>
           <li class="description-item icon-astronaut">
+            <div class="descrption-icon"></div>
             <h3 class="title">Современные технологии</h3>
             <p class="text">
               Значимость этих проблем настолько очевидна, что реализация
@@ -271,7 +276,8 @@
             </ul>
         </div>
       </section>
-            <div class="client-blok">
+            <section class="section">
+            <div class="container">
             <h2 class="client-title">Постоянные клиенты</h2>
             <ul class="client-blok-list">
               <li class="client-blok-item">
@@ -316,8 +322,9 @@
                 </svg>    
               </a>
               </li>                           
-            </ul>              
-            </div>        
+            </ul>    
+            </div>          
+          </section>        
     </main>
     <footer class="footer">
       <div class="container">
