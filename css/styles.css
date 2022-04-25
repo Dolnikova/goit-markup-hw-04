@@ -309,7 +309,6 @@ li {
     margin-right: 30px;
 }
 .description-item::before {
-    /* content: ""; */
     width: 270px;
     height: 120px;
     background-color: var(--description-color);
@@ -321,25 +320,23 @@ li {
 .descrption-icon {
     width: 270px;
     height: 120px;
-    background-color: var(--description-color);
     margin-bottom: 30px;
     display: block;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-image: url(../images3/antenna.svg); */
 }
 
 .icon-antenna .descrption-icon {
-    background-image: url(../images3/antenna.svg);
+    background-image: url(../images3/antenna.svg), url(../images3/rectangle.svg);
 }
 .icon-time .descrption-icon {
-    background-image: url(../images3/clock.svg);
+    background-image: url(../images3/clock.svg), url(../images3/rectangle.svg);
 }
 .icon-diagram .descrption-icon {
-    background-image: url(../images3/diagram.svg);
+    background-image: url(../images3/diagram.svg), url(../images3/rectangle.svg);
 }
 .icon-astronaut .descrption-icon {
-    background-image: url(../images3/astronaut.svg);
+    background-image: url(../images3/astronaut.svg), url(../images3/rectangle.svg);
 }
 .command-title {
     font-weight: 500;
